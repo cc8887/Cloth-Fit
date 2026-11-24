@@ -1,0 +1,261 @@
+{
+  "gap_unit": "percent of longest normalized skeleton span; not centimeters",
+  "cases": [
+    {
+      "case": "FoxGirl",
+      "wall_seconds": 68.88,
+      "peak_rss_kib": 1259052,
+      "latest_saved_step": 174,
+      "solver_exit_code": 0,
+      "final_gradient_norm": 0.00355989,
+      "body_crossing_ipc": 0,
+      "self_crossing_ipc": 0,
+      "body_crossing_blender_bvh": 0,
+      "self_crossing_blender_bvh": 0,
+      "garment_vertex_count": 3472,
+      "garment_triangle_count": 6840,
+      "zones": {
+        "collar": {
+          "sampled_vertices": 268,
+          "median_gap_v3": 1.45,
+          "median_gap_v4": 1.8111,
+          "median_of_paired_changes": 0.187,
+          "normalized_bounding_extent_xyz_v3": [
+            13.4489,
+            15.4436,
+            5.6234
+          ],
+          "normalized_bounding_extent_xyz_v4": [
+            15.0352,
+            15.4632,
+            6.1569
+          ]
+        },
+        "shoulders": {
+          "sampled_vertices": 175,
+          "median_gap_v3": 0.402,
+          "median_gap_v4": 0.5461,
+          "median_of_paired_changes": 0.208,
+          "normalized_bounding_extent_xyz_v3": [
+            20.2277,
+            9.4242,
+            6.2465
+          ],
+          "normalized_bounding_extent_xyz_v4": [
+            23.6143,
+            11.6349,
+            7.0659
+          ]
+        },
+        "chest": {
+          "sampled_vertices": 208,
+          "median_gap_v3": 0.5517,
+          "median_gap_v4": 2.5507,
+          "median_of_paired_changes": 1.811,
+          "normalized_bounding_extent_xyz_v3": [
+            17.3622,
+            13.5677,
+            5.4247
+          ],
+          "normalized_bounding_extent_xyz_v4": [
+            23.438,
+            20.5474,
+            6.7614
+          ]
+        },
+        "waist": {
+          "sampled_vertices": 337,
+          "median_gap_v3": 4.0712,
+          "median_gap_v4": 3.5298,
+          "median_of_paired_changes": -0.7312,
+          "normalized_bounding_extent_xyz_v3": [
+            23.3569,
+            19.4749,
+            8.9125
+          ],
+          "normalized_bounding_extent_xyz_v4": [
+            28.614,
+            22.9469,
+            8.1374
+          ]
+        },
+        "abdomen": {
+          "sampled_vertices": 162,
+          "median_gap_v3": 2.34,
+          "median_gap_v4": 6.0855,
+          "median_of_paired_changes": 3.523,
+          "normalized_bounding_extent_xyz_v3": [
+            17.8921,
+            16.57,
+            5.6861
+          ],
+          "normalized_bounding_extent_xyz_v4": [
+            26.8711,
+            23.4127,
+            5.9068
+          ]
+        },
+        "sleeves": {
+          "sampled_vertices": 756,
+          "median_gap_v3": 3.5476,
+          "median_gap_v4": 3.2077,
+          "median_of_paired_changes": -0.1935,
+          "normalized_bounding_extent_xyz_v3": [
+            67.3248,
+            16.4081,
+            18.957
+          ],
+          "normalized_bounding_extent_xyz_v4": [
+            67.245,
+            16.2778,
+            17.8258
+          ]
+        },
+        "hem": {
+          "sampled_vertices": 108,
+          "median_gap_v3": 5.1547,
+          "median_gap_v4": 3.1101,
+          "median_of_paired_changes": -1.5022,
+          "normalized_bounding_extent_xyz_v3": [
+            41.4064,
+            23.2142,
+            8.8833
+          ],
+          "normalized_bounding_extent_xyz_v4": [
+            33.2629,
+            21.1549,
+            7.6225
+          ]
+        }
+      }
+    },
+    {
+      "case": "Goblin",
+      "wall_seconds": 106.327,
+      "peak_rss_kib": 1540308,
+      "latest_saved_step": 270,
+      "solver_exit_code": 0,
+      "final_gradient_norm": 0.00451524,
+      "body_crossing_ipc": 0,
+      "self_crossing_ipc": 0,
+      "body_crossing_blender_bvh": 0,
+      "self_crossing_blender_bvh": 0,
+      "garment_vertex_count": 3472,
+      "garment_triangle_count": 6840,
+      "zones": {
+        "collar": {
+          "sampled_vertices": 268,
+          "median_gap_v3": 3.7287,
+          "median_gap_v4": 3.7839,
+          "median_of_paired_changes": 0.0621,
+          "normalized_bounding_extent_xyz_v3": [
+            40.4765,
+            37.0615,
+            11.0136
+          ],
+          "normalized_bounding_extent_xyz_v4": [
+            40.2493,
+            37.4366,
+            11.2849
+          ]
+        },
+        "shoulders": {
+          "sampled_vertices": 175,
+          "median_gap_v3": 0.94,
+          "median_gap_v4": 1.0447,
+          "median_of_paired_changes": 0.0699,
+          "normalized_bounding_extent_xyz_v3": [
+            53.9333,
+            20.7779,
+            14.2697
+          ],
+          "normalized_bounding_extent_xyz_v4": [
+            53.9488,
+            22.1812,
+            16.3371
+          ]
+        },
+        "chest": {
+          "sampled_vertices": 208,
+          "median_gap_v3": 1.1988,
+          "median_gap_v4": 2.8764,
+          "median_of_paired_changes": 1.5938,
+          "normalized_bounding_extent_xyz_v3": [
+            37.7648,
+            30.9243,
+            9.3201
+          ],
+          "normalized_bounding_extent_xyz_v4": [
+            39.5802,
+            33.9433,
+            11.6944
+          ]
+        },
+        "waist": {
+          "sampled_vertices": 337,
+          "median_gap_v3": 0.988,
+          "median_gap_v4": 1.4587,
+          "median_of_paired_changes": 0.4367,
+          "normalized_bounding_extent_xyz_v3": [
+            35.821,
+            31.1371,
+            11.2292
+          ],
+          "normalized_bounding_extent_xyz_v4": [
+            37.3128,
+            32.8083,
+            9.3655
+          ]
+        },
+        "abdomen": {
+          "sampled_vertices": 162,
+          "median_gap_v3": 1.4234,
+          "median_gap_v4": 2.7714,
+          "median_of_paired_changes": 1.4773,
+          "normalized_bounding_extent_xyz_v3": [
+            34.7423,
+            32.0984,
+            8.6299
+          ],
+          "normalized_bounding_extent_xyz_v4": [
+            37.7634,
+            35.1706,
+            7.4813
+          ]
+        },
+        "sleeves": {
+          "sampled_vertices": 756,
+          "median_gap_v3": 1.3087,
+          "median_gap_v4": 1.279,
+          "median_of_paired_changes": -0.0121,
+          "normalized_bounding_extent_xyz_v3": [
+            82.8182,
+            21.896,
+            27.8524
+          ],
+          "normalized_bounding_extent_xyz_v4": [
+            84.0767,
+            22.1991,
+            27.3038
+          ]
+        },
+        "hem": {
+          "sampled_vertices": 108,
+          "median_gap_v3": 3.3912,
+          "median_gap_v4": 3.0215,
+          "median_of_paired_changes": -0.2224,
+          "normalized_bounding_extent_xyz_v3": [
+            37.3097,
+            27.3146,
+            9.8151
+          ],
+          "normalized_bounding_extent_xyz_v4": [
+            37.5508,
+            26.6383,
+            9.2961
+          ]
+        }
+      }
+    }
+  ]
+}

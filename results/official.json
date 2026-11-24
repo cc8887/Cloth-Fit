@@ -1,0 +1,38 @@
+[
+  {
+    "case": "foxgirl_skirt",
+    "wall_seconds": 50.243,
+    "peak_rss_kib": 1485180,
+    "latest_saved_step": 162,
+    "solver_exit_code": 0,
+    "static_ipc_intersections": 0,
+    "normalized_min_distance_within_dhat": 0.00194353
+  },
+  {
+    "case": "Goblin_Jacket",
+    "wall_seconds": 106.6,
+    "peak_rss_kib": 1549208,
+    "latest_saved_step": 327,
+    "solver_exit_code": 0,
+    "static_ipc_intersections": 0,
+    "normalized_min_distance_within_dhat": 0.00188565
+  },
+  {
+    "case": "Goblin_Jumpsuit",
+    "wall_seconds": 163.432,
+    "peak_rss_kib": 1549004,
+    "latest_saved_step": 406,
+    "solver_exit_code": 0,
+    "static_ipc_intersections": 0,
+    "normalized_min_distance_within_dhat": 0.00189996
+  },
+  {
+    "case": "Trex_Jacket",
+    "wall_seconds": 921.69,
+    "peak_rss_kib": 3059392,
+    "latest_saved_step": 2112,
+    "solver_exit_code": 0,
+    "static_ipc_intersections": 0,
+    "normalized_min_distance_within_dhat": 0.00198167
+  }
+]

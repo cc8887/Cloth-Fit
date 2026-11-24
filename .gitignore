@@ -1,0 +1,9 @@
+/cloth-fit/
+/cloth-env/
+/cloth-tbb/
+/cloth-cache/
+/cloth-deps/
+/runs/
+/local-inputs/
+__pycache__/
+*.pyc
