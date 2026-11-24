@@ -1,0 +1,82 @@
+{
+  "vertices": 3472,
+  "faces": 6840,
+  "boundary_loops": [
+    18,
+    18,
+    36,
+    36
+  ],
+  "components": 1,
+  "nonadjacent_static_self_intersections": 0,
+  "minimum_triangle_area": 3.403050301990237e-05,
+  "vertex_face_uv_correspondence": "v2 faces and OBJ vt tokens are preserved verbatim; only v coordinates vary",
+  "profile": {
+    "waist": 0.37,
+    "abdomen": 0.33,
+    "sleeve": 0.24,
+    "hem": 0.18,
+    "chest": 0.34,
+    "structure": 0.68
+  },
+  "source_cross_section_xy": {
+    "chest": {
+      "before": [
+        0.629158,
+        0.383354
+      ],
+      "after": [
+        0.7362,
+        0.53045
+      ],
+      "fraction": [
+        0.1701,
+        0.3837
+      ]
+    },
+    "waist": {
+      "before": [
+        0.501804,
+        0.414023
+      ],
+      "after": [
+        0.668451,
+        0.546095
+      ],
+      "fraction": [
+        0.3321,
+        0.319
+      ]
+    },
+    "abdomen": {
+      "before": [
+        0.49439,
+        0.419136
+      ],
+      "after": [
+        0.67396,
+        0.571315
+      ],
+      "fraction": [
+        0.3632,
+        0.3631
+      ]
+    },
+    "lower_hem": {
+      "before": [
+        0.627136,
+        0.45428
+      ],
+      "after": [
+        0.717371,
+        0.513374
+      ],
+      "fraction": [
+        0.1439,
+        0.1301
+      ]
+    }
+  },
+  "no_fit_vertex_count": 2265,
+  "no_fit_face_count": 4232
+}

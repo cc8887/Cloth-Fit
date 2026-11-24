@@ -17,7 +17,7 @@
 
 这是 **4 个示例、3 种身体**，不是论文全部组合、消融实验或性能表。Linux x86-64 CPU 求解，设 8 线程，无 NVIDIA GPU；包含存盘，不含依赖安装和编译。机器并行有少量其他工作，不是严格隔离基准。数据：[官方示例记录](results/official.json)。
 
-赤云长袍的首版同一份输入分别试穿 FoxGirl（116.329 s）、Goblin（196.330 s）和 T-Rex（1,197.674 s）。恐龙明显拉伸，不能直接视为可上线版型。后来的 V4 只重跑了 **FoxGirl（68.880 s）** 和 **Goblin（106.327 s）**，均以梯度阈值收敛，导出的静态三角网格用 IPC 和 Blender BVH 两种后检查均未检出衣身穿插或衣物自交。[V4 原始统计](results/structured.json)。
+赤云长袍的首版同一份输入分别试穿 FoxGirl（116.329 s）、Goblin（196.330 s）和 T-Rex（1,197.674 s）。恐龙明显拉伸，不能直接视为可上线版型。后来的 V4 只重跑了 **FoxGirl（68.880 s）** 和 **Goblin（106.327 s）**，均以梯度阈值收敛，导出的静态三角网格用 IPC 和 Blender BVH 两种后检查均未检出衣身穿插或衣物自交。[V4 原始统计](results/structured.json) · [完整区间指标、输入指纹和终止摘要](results/structured-details.json)。
 
 - **胸口确实离身体更远。** FoxGirl 胸区中位距离从 0.5517 到 2.5507，Goblin 从 1.1988 到 2.8764，单位是归一化模型骨架最长跨度的百分比，**不是厘米**。两者腹部也增加。
 - **不是全身等量外移。** FoxGirl 腰区中位间隙反而从 4.0712 降到 3.5298，下摆从 5.1547 降到 3.1101；衣身横向包围宽度则是另一个指标，不能与离体距离混用。哥布林的胸区前后范围比左右范围增长更明显，侧面更能看出变化。
@@ -25,7 +25,7 @@
 
 ## 复跑官方样例
 
-在 Linux x86-64 准备 Git、Python 3.9 或更高版本（含 venv）、GCC/G++、构建环境与网络。下列脚本在此目录内构建；不安装系统包。默认用 2 个编译任务以控制内存；初次构建可能明显长于单次求解。上游代码和数据从作者仓库取，不从本仓库下载。
+在 Linux x86-64 准备 Git、Python 3.9 或更新版本（含 venv）、GCC/G++、构建环境与网络。下列脚本在此目录内构建；不安装系统包。默认用 2 个编译任务以控制内存；初次构建可能明显长于单次求解。上游代码和数据从作者仓库取，不从本仓库下载。
 
 ```bash
 bash tools/bootstrap.sh
@@ -37,12 +37,15 @@ python3 tools/reproduce.py foxgirl_skirt
 
 ## 复跑赤云 V4（需要本地素材）
 
-如果已持有并有权使用对应工程，把 V4 的 `garment.obj`、`source_skeleton.obj`、`no-fit.txt` 放进 `local-inputs/v4/`。这是旧 Blender 源场景导出的三角衣片、骨架及不贴紧区；随便换网格不能复现原结果。
+可从已获得的固定版上游 Puffer_dense 输入在本地重建赤云长袍 V2/V4 源版型、求解用 OBJ 和可调 Blender 形态键。这里不含模型与贴图。参见 [V4 源衣复刻与复核](source/structured/README.md)。
 
 ```bash
-python3 tools/reproduce.py FoxGirl --structured-source local-inputs/v4
-python3 tools/reproduce.py Goblin  --structured-source local-inputs/v4
+CONTROLS=1 bash tools/build_structured.sh cloth-fit local-inputs/rebuilt
+python3 tools/reproduce.py FoxGirl --structured-source local-inputs/rebuilt/v4
+python3 tools/reproduce.py Goblin  --structured-source local-inputs/rebuilt/v4
 ```
+
+如果已经持有并有权使用对应工程，也可以直接以 `--structured-source local-inputs/v4` 使用其导出的 `garment.obj`、`source_skeleton.obj`、`no-fit.txt`。随意更换输入网格不能复现原结果。
 
 V4 的胸、腰、腹、袖、摆、顺形系数分别为 .34、.37、.33、.24、.18、.68。这些是源几何变化的参数，不是米制尺码。修改 Blender 形态键必须重新导出输入、重跑和检查。默认 V4 设 4 线程，FoxGirl 两个递进子步、Goblin 一个。用户自己的新衣片必须是三角 OBJ，源和目标骨架需保持相同连接与关节顺序，尽量同姿势；不贴紧区索引需从对应衣片重新生成。
 

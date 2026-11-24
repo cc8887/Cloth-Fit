@@ -1,0 +1,661 @@
+{
+  "FoxGirl": {
+    "input_and_original_setup_sha256": {
+      "garment_mesh_path": "3403f69534aeb721d9f3df084e6a712712a9ee4b495281a95f9ad4938a187a75",
+      "source_skeleton_path": "dde41dbe3e32e378f9fb3469015ad8d85e2da1c9414f8c4d9ef52be9f2cf2346",
+      "no_fit_spec_path": "221ebf8de8a08c293b1ee5cfc353d5a83cb3d4a585db0053df8827764422d49e",
+      "avatar_mesh_path": "7677290846eee9bbf660057f40973916bc997bcf38f83e4b52322abe4f1f888a",
+      "target_skeleton_path": "34f30814fb61ac9fe9aea66cc78a5e6ad0d18c0ef032d732b5eae9b4cf622c7d",
+      "setup.json": "0f1ddfb6d459079fa84487953ac11f8e2325caafb3e2f13d212b50f8dad62006"
+    },
+    "solver_reported_success": true,
+    "solver_terminal_summary": "Gradient vector norm too small took 29.02s (iters=100 f=0.00827354 Δf=3.37756e-06 ‖∇f‖=0.00355989 ‖Δx‖=nan Δx⋅∇f(x)=nan) (stopping criteria: iters=5000 f=8.89541e-311 Δf=0 ‖∇f‖=0.01 ‖Δx‖=0 Δx⋅∇f(x)=-0)",
+    "mesh_checks": {
+      "source_vertices": 3472,
+      "exported_vertices": 3472,
+      "source_faces": 6840,
+      "exported_faces": 6840,
+      "same_ordered_face_indices": true,
+      "same_exported_uvs": true,
+      "finite_export": true,
+      "normalized_edge_length_ratio": {
+        "p01": 0.6931213289343395,
+        "p10": 0.7596857458325527,
+        "median": 0.8532990538593549,
+        "p90": 0.9326768817825475,
+        "p99": 0.9831084918388406
+      },
+      "vertices_in_degenerate_faces": 0
+    },
+    "shape_metrics": {
+      "note": "Matched vertex regions in geometry, axis extents and adjacent triangle angles; static shape diagnostic, not textile stiffness",
+      "regions": {
+        "collar": {
+          "vertex_count": 268,
+          "axis_extent_v3": [
+            0.268977,
+            0.308872,
+            0.112468
+          ],
+          "axis_extent_v4": [
+            0.300704,
+            0.309263,
+            0.123138
+          ],
+          "adjacent_face_angle_degrees_p50_p90_v3": [
+            4.574,
+            9.121
+          ],
+          "adjacent_face_angle_degrees_p50_p90_v4": [
+            4.568,
+            8.808
+          ]
+        },
+        "shoulders": {
+          "vertex_count": 175,
+          "axis_extent_v3": [
+            0.404554,
+            0.188484,
+            0.12493
+          ],
+          "axis_extent_v4": [
+            0.472286,
+            0.232697,
+            0.141318
+          ],
+          "adjacent_face_angle_degrees_p50_p90_v3": [
+            5.027,
+            11.86
+          ],
+          "adjacent_face_angle_degrees_p50_p90_v4": [
+            4.845,
+            11.518
+          ]
+        },
+        "chest": {
+          "vertex_count": 208,
+          "axis_extent_v3": [
+            0.347245,
+            0.271355,
+            0.108494
+          ],
+          "axis_extent_v4": [
+            0.468761,
+            0.410947,
+            0.135227
+          ],
+          "adjacent_face_angle_degrees_p50_p90_v3": [
+            5.615,
+            16.858
+          ],
+          "adjacent_face_angle_degrees_p50_p90_v4": [
+            5.134,
+            17.548
+          ]
+        },
+        "waist": {
+          "vertex_count": 337,
+          "axis_extent_v3": [
+            0.467139,
+            0.389498,
+            0.178251
+          ],
+          "axis_extent_v4": [
+            0.572279,
+            0.458938,
+            0.162748
+          ],
+          "adjacent_face_angle_degrees_p50_p90_v3": [
+            4.103,
+            9.2
+          ],
+          "adjacent_face_angle_degrees_p50_p90_v4": [
+            5.083,
+            9.547
+          ]
+        },
+        "abdomen": {
+          "vertex_count": 162,
+          "axis_extent_v3": [
+            0.357842,
+            0.3314,
+            0.113722
+          ],
+          "axis_extent_v4": [
+            0.537421,
+            0.468254,
+            0.118136
+          ],
+          "adjacent_face_angle_degrees_p50_p90_v3": [
+            5.09,
+            10.913
+          ],
+          "adjacent_face_angle_degrees_p50_p90_v4": [
+            5.906,
+            10.362
+          ]
+        },
+        "sleeves": {
+          "vertex_count": 756,
+          "axis_extent_v3": [
+            1.346496,
+            0.328162,
+            0.379139
+          ],
+          "axis_extent_v4": [
+            1.344899,
+            0.325556,
+            0.356517
+          ],
+          "adjacent_face_angle_degrees_p50_p90_v3": [
+            11.394,
+            19.567
+          ],
+          "adjacent_face_angle_degrees_p50_p90_v4": [
+            11.277,
+            18.965
+          ]
+        },
+        "hem": {
+          "vertex_count": 108,
+          "axis_extent_v3": [
+            0.828128,
+            0.464284,
+            0.177665
+          ],
+          "axis_extent_v4": [
+            0.665257,
+            0.423099,
+            0.15245
+          ],
+          "adjacent_face_angle_degrees_p50_p90_v3": [
+            1.776,
+            14.125
+          ],
+          "adjacent_face_angle_degrees_p50_p90_v4": [
+            3.477,
+            12.451
+          ]
+        }
+      }
+    },
+    "clearance_v3_to_v4": {
+      "unit": "percent longest normalized skeleton span",
+      "same_avatar": true,
+      "same_cloth_topology": true,
+      "axis_extents": "world-normalized OBJ X width, Y depth, Z height; same units",
+      "zones": {
+        "collar": {
+          "matched_vertices": 268,
+          "baseline_median": 1.45,
+          "baseline_bbox_xyz": [
+            13.4489,
+            15.4436,
+            5.6234
+          ],
+          "variant_bbox_xyz": [
+            15.0352,
+            15.4632,
+            6.1569
+          ],
+          "loose_median": 1.8111,
+          "paired_change_median": 0.187,
+          "proportion_increased": 0.8433,
+          "baseline_p10": 0.4382,
+          "loose_p10": 0.4878
+        },
+        "shoulders": {
+          "matched_vertices": 175,
+          "baseline_median": 0.402,
+          "baseline_bbox_xyz": [
+            20.2277,
+            9.4242,
+            6.2465
+          ],
+          "variant_bbox_xyz": [
+            23.6143,
+            11.6349,
+            7.0659
+          ],
+          "loose_median": 0.5461,
+          "paired_change_median": 0.208,
+          "proportion_increased": 0.7086,
+          "baseline_p10": 0.2375,
+          "loose_p10": 0.2587
+        },
+        "chest": {
+          "matched_vertices": 208,
+          "baseline_median": 0.5517,
+          "baseline_bbox_xyz": [
+            17.3622,
+            13.5677,
+            5.4247
+          ],
+          "variant_bbox_xyz": [
+            23.438,
+            20.5474,
+            6.7614
+          ],
+          "loose_median": 2.5507,
+          "paired_change_median": 1.811,
+          "proportion_increased": 0.9327,
+          "baseline_p10": 0.2316,
+          "loose_p10": 0.5084
+        },
+        "waist": {
+          "matched_vertices": 337,
+          "baseline_median": 4.0712,
+          "baseline_bbox_xyz": [
+            23.3569,
+            19.4749,
+            8.9125
+          ],
+          "variant_bbox_xyz": [
+            28.614,
+            22.9469,
+            8.1374
+          ],
+          "loose_median": 3.5298,
+          "paired_change_median": -0.7312,
+          "proportion_increased": 0.3086,
+          "baseline_p10": 2.9819,
+          "loose_p10": 1.4584
+        },
+        "abdomen": {
+          "matched_vertices": 162,
+          "baseline_median": 2.34,
+          "baseline_bbox_xyz": [
+            17.8921,
+            16.57,
+            5.6861
+          ],
+          "variant_bbox_xyz": [
+            26.8711,
+            23.4127,
+            5.9068
+          ],
+          "loose_median": 6.0855,
+          "paired_change_median": 3.523,
+          "proportion_increased": 1.0,
+          "baseline_p10": 1.1504,
+          "loose_p10": 4.4181
+        },
+        "sleeves": {
+          "matched_vertices": 756,
+          "baseline_median": 3.5476,
+          "baseline_bbox_xyz": [
+            67.3248,
+            16.4081,
+            18.957
+          ],
+          "variant_bbox_xyz": [
+            67.245,
+            16.2778,
+            17.8258
+          ],
+          "loose_median": 3.2077,
+          "paired_change_median": -0.1935,
+          "proportion_increased": 0.2672,
+          "baseline_p10": 1.829,
+          "loose_p10": 1.6419
+        },
+        "hem": {
+          "matched_vertices": 108,
+          "baseline_median": 5.1547,
+          "baseline_bbox_xyz": [
+            41.4064,
+            23.2142,
+            8.8833
+          ],
+          "variant_bbox_xyz": [
+            33.2629,
+            21.1549,
+            7.6225
+          ],
+          "loose_median": 3.1101,
+          "paired_change_median": -1.5022,
+          "proportion_increased": 0.213,
+          "baseline_p10": 3.2468,
+          "loose_p10": 1.5964
+        }
+      }
+    },
+    "blender_bvh": {
+      "garment_self_nonadjacent_pair_count": 0,
+      "self_examples": [],
+      "garment_body_pair_count": 0,
+      "body_examples": []
+    },
+    "ipc_terminal_summary": "body_vertices=5128 garment_vertices=3472 body_garment_intersection=0 garment_self_intersection=0 static_same_library=IPC"
+  },
+  "Goblin": {
+    "input_and_original_setup_sha256": {
+      "garment_mesh_path": "3403f69534aeb721d9f3df084e6a712712a9ee4b495281a95f9ad4938a187a75",
+      "source_skeleton_path": "dde41dbe3e32e378f9fb3469015ad8d85e2da1c9414f8c4d9ef52be9f2cf2346",
+      "no_fit_spec_path": "221ebf8de8a08c293b1ee5cfc353d5a83cb3d4a585db0053df8827764422d49e",
+      "avatar_mesh_path": "03c320122937e2e9e58b9ec3530a06ce25af224be3c0f021124259040c229fdb",
+      "target_skeleton_path": "9b1941409574fd8f94d8045f68c02200bc13d7cb92a95adb1bddd3cf50963a32",
+      "avatar_skin_weights_path": "616cd1ddf02694264efa2802f8434577f03c8c38b45d57eae8aab89c60135d04",
+      "setup.json": "267beb9dd291a55696e2a28b0e5a10bb38714627020fc90dc7cd5e14843ce2e0"
+    },
+    "solver_reported_success": true,
+    "solver_terminal_summary": "Gradient vector norm too small took 36.016s (iters=117 f=0.0756909 Δf=1.02651e-06 ‖∇f‖=0.00451524 ‖Δx‖=nan Δx⋅∇f(x)=nan) (stopping criteria: iters=5000 f=1.04784e-310 Δf=0 ‖∇f‖=0.01 ‖Δx‖=0 Δx⋅∇f(x)=-0)",
+    "mesh_checks": {
+      "source_vertices": 3472,
+      "exported_vertices": 3472,
+      "source_faces": 6840,
+      "exported_faces": 6840,
+      "same_ordered_face_indices": true,
+      "same_exported_uvs": true,
+      "finite_export": true,
+      "normalized_edge_length_ratio": {
+        "p01": 0.858763695879476,
+        "p10": 1.0386568903773308,
+        "median": 1.372281987384396,
+        "p90": 1.8961425631875237,
+        "p99": 2.4806816771153635
+      },
+      "vertices_in_degenerate_faces": 0
+    },
+    "shape_metrics": {
+      "note": "Matched vertex regions in geometry, axis extents and adjacent triangle angles; static shape diagnostic, not textile stiffness",
+      "regions": {
+        "collar": {
+          "vertex_count": 268,
+          "axis_extent_v3": [
+            0.809531,
+            0.741231,
+            0.220273
+          ],
+          "axis_extent_v4": [
+            0.804987,
+            0.748732,
+            0.225699
+          ],
+          "adjacent_face_angle_degrees_p50_p90_v3": [
+            5.404,
+            12.602
+          ],
+          "adjacent_face_angle_degrees_p50_p90_v4": [
+            5.462,
+            12.787
+          ]
+        },
+        "shoulders": {
+          "vertex_count": 175,
+          "axis_extent_v3": [
+            1.078666,
+            0.415557,
+            0.285394
+          ],
+          "axis_extent_v4": [
+            1.078976,
+            0.443625,
+            0.326742
+          ],
+          "adjacent_face_angle_degrees_p50_p90_v3": [
+            7.118,
+            15.943
+          ],
+          "adjacent_face_angle_degrees_p50_p90_v4": [
+            7.769,
+            16.567
+          ]
+        },
+        "chest": {
+          "vertex_count": 208,
+          "axis_extent_v3": [
+            0.755296,
+            0.618486,
+            0.186402
+          ],
+          "axis_extent_v4": [
+            0.791604,
+            0.678865,
+            0.233889
+          ],
+          "adjacent_face_angle_degrees_p50_p90_v3": [
+            6.082,
+            18.147
+          ],
+          "adjacent_face_angle_degrees_p50_p90_v4": [
+            6.518,
+            20.82
+          ]
+        },
+        "waist": {
+          "vertex_count": 337,
+          "axis_extent_v3": [
+            0.716421,
+            0.622743,
+            0.224584
+          ],
+          "axis_extent_v4": [
+            0.746255,
+            0.656165,
+            0.18731
+          ],
+          "adjacent_face_angle_degrees_p50_p90_v3": [
+            5.532,
+            12.683
+          ],
+          "adjacent_face_angle_degrees_p50_p90_v4": [
+            5.923,
+            11.519
+          ]
+        },
+        "abdomen": {
+          "vertex_count": 162,
+          "axis_extent_v3": [
+            0.694845,
+            0.641968,
+            0.172597
+          ],
+          "axis_extent_v4": [
+            0.755268,
+            0.703411,
+            0.149627
+          ],
+          "adjacent_face_angle_degrees_p50_p90_v3": [
+            6.519,
+            13.993
+          ],
+          "adjacent_face_angle_degrees_p50_p90_v4": [
+            7.236,
+            13.122
+          ]
+        },
+        "sleeves": {
+          "vertex_count": 756,
+          "axis_extent_v3": [
+            1.656363,
+            0.437919,
+            0.557049
+          ],
+          "axis_extent_v4": [
+            1.681534,
+            0.443983,
+            0.546077
+          ],
+          "adjacent_face_angle_degrees_p50_p90_v3": [
+            13.699,
+            24.844
+          ],
+          "adjacent_face_angle_degrees_p50_p90_v4": [
+            13.895,
+            24.68
+          ]
+        },
+        "hem": {
+          "vertex_count": 108,
+          "axis_extent_v3": [
+            0.746195,
+            0.546293,
+            0.196302
+          ],
+          "axis_extent_v4": [
+            0.751015,
+            0.532765,
+            0.185922
+          ],
+          "adjacent_face_angle_degrees_p50_p90_v3": [
+            1.915,
+            11.811
+          ],
+          "adjacent_face_angle_degrees_p50_p90_v4": [
+            4.262,
+            12.142
+          ]
+        }
+      }
+    },
+    "clearance_v3_to_v4": {
+      "unit": "percent longest normalized skeleton span",
+      "same_avatar": true,
+      "same_cloth_topology": true,
+      "axis_extents": "world-normalized OBJ X width, Y depth, Z height; same units",
+      "zones": {
+        "collar": {
+          "matched_vertices": 268,
+          "baseline_median": 3.7287,
+          "baseline_bbox_xyz": [
+            40.4765,
+            37.0615,
+            11.0136
+          ],
+          "variant_bbox_xyz": [
+            40.2493,
+            37.4366,
+            11.2849
+          ],
+          "loose_median": 3.7839,
+          "paired_change_median": 0.0621,
+          "proportion_increased": 0.5933,
+          "baseline_p10": 1.358,
+          "loose_p10": 1.3422
+        },
+        "shoulders": {
+          "matched_vertices": 175,
+          "baseline_median": 0.94,
+          "baseline_bbox_xyz": [
+            53.9333,
+            20.7779,
+            14.2697
+          ],
+          "variant_bbox_xyz": [
+            53.9488,
+            22.1812,
+            16.3371
+          ],
+          "loose_median": 1.0447,
+          "paired_change_median": 0.0699,
+          "proportion_increased": 0.64,
+          "baseline_p10": 0.3789,
+          "loose_p10": 0.3598
+        },
+        "chest": {
+          "matched_vertices": 208,
+          "baseline_median": 1.1988,
+          "baseline_bbox_xyz": [
+            37.7648,
+            30.9243,
+            9.3201
+          ],
+          "variant_bbox_xyz": [
+            39.5802,
+            33.9433,
+            11.6944
+          ],
+          "loose_median": 2.8764,
+          "paired_change_median": 1.5938,
+          "proportion_increased": 0.875,
+          "baseline_p10": 0.4679,
+          "loose_p10": 0.6399
+        },
+        "waist": {
+          "matched_vertices": 337,
+          "baseline_median": 0.988,
+          "baseline_bbox_xyz": [
+            35.821,
+            31.1371,
+            11.2292
+          ],
+          "variant_bbox_xyz": [
+            37.3128,
+            32.8083,
+            9.3655
+          ],
+          "loose_median": 1.4587,
+          "paired_change_median": 0.4367,
+          "proportion_increased": 0.8487,
+          "baseline_p10": 0.4233,
+          "loose_p10": 0.4328
+        },
+        "abdomen": {
+          "matched_vertices": 162,
+          "baseline_median": 1.4234,
+          "baseline_bbox_xyz": [
+            34.7423,
+            32.0984,
+            8.6299
+          ],
+          "variant_bbox_xyz": [
+            37.7634,
+            35.1706,
+            7.4813
+          ],
+          "loose_median": 2.7714,
+          "paired_change_median": 1.4773,
+          "proportion_increased": 0.9259,
+          "baseline_p10": 0.6692,
+          "loose_p10": 1.2888
+        },
+        "sleeves": {
+          "matched_vertices": 756,
+          "baseline_median": 1.3087,
+          "baseline_bbox_xyz": [
+            82.8182,
+            21.896,
+            27.8524
+          ],
+          "variant_bbox_xyz": [
+            84.0767,
+            22.1991,
+            27.3038
+          ],
+          "loose_median": 1.279,
+          "paired_change_median": -0.0121,
+          "proportion_increased": 0.459,
+          "baseline_p10": 0.5884,
+          "loose_p10": 0.5858
+        },
+        "hem": {
+          "matched_vertices": 108,
+          "baseline_median": 3.3912,
+          "baseline_bbox_xyz": [
+            37.3097,
+            27.3146,
+            9.8151
+          ],
+          "variant_bbox_xyz": [
+            37.5508,
+            26.6383,
+            9.2961
+          ],
+          "loose_median": 3.0215,
+          "paired_change_median": -0.2224,
+          "proportion_increased": 0.3333,
+          "baseline_p10": 0.8885,
+          "loose_p10": 0.7125
+        }
+      }
+    },
+    "blender_bvh": {
+      "garment_self_nonadjacent_pair_count": 0,
+      "self_examples": [],
+      "garment_body_pair_count": 0,
+      "body_examples": []
+    },
+    "ipc_terminal_summary": "body_vertices=5214 garment_vertices=3472 body_garment_intersection=0 garment_self_intersection=0 static_same_library=IPC"
+  }
+}
